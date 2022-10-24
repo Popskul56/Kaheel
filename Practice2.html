@@ -1,7 +1,7 @@
 <html>
 <head>
-    <script>
-        alert('test');
+    <script src="Code.js">
+      
         
     </script>
     <title> Uat Space Program</title>
@@ -11,64 +11,8 @@
 <p>uat</p>
 <span id="displaycoundown">startingcountdown</span>
 <script>
-
-currTime=50;
-        timeout=5000;
-        x=document.getElementById("displaycoundown");
-        setTimeout(function(){
-            x.innerHTML=currTime;
-            currTime=currTime-5;
-        },timeout);
-        timeout=timeout+5000;
-        setTimeout(function(){
-            x.innerHTML=currTime;
-            currTime=currTime-5;
-        },timeout);
-        timeout=timeout+5000; 
-        setTimeout(function(){
-            x.innerHTML=currTime;
-            currTime=currTime-5;
-        },timeout);
-        timeout=timeout+5000; 
-        setTimeout(function(){
-            x.innerHTML=currTime;
-            currTime=currTime-5;
-        },timeout);
-        timeout=timeout+5000; 
-        setTimeout(function(){
-            x.innerHTML=currTime;
-            currTime=currTime-5;
-        },timeout);
-        timeout=timeout+5000;
-        setTimeout(function(){
-            x.innerHTML=currTime;
-            currTime=currTime-5;
-        },timeout);
-        timeout=timeout+5000; 
-        setTimeout(function(){
-            x.innerHTML=currTime;
-            currTime=currTime-5;
-        },timeout);
-        timeout=timeout+5000; 
-        setTimeout(function(){
-            x.innerHTML=currTime;
-            currTime=currTime-5;
-        },timeout);
-        timeout=timeout+5000; 
-        setTimeout(function(){
-            x.innerHTML=currTime;
-            currTime=currTime-5;
-        },timeout);
-        timeout=timeout+5000;  
-        setTimeout(function(){
-            x.innerHTML=currTime;
-            currTime=currTime-5;
-        },timeout);
-        timeout=timeout+5000;
-        setTimeout(function(){
-           alert("Blastoff");
-        },timeout);
-        timeout=timeout+5000;
+x=document.getElementById("displaycoundown");
+runtimer (x);
 </script>
 </body>
 </html>
