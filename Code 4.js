@@ -1,8 +1,11 @@
+var innervalid=new Array();
+
 function runtimer (x){currTime=50;
     timeout=5000;
 
     for(i=0;i<11;i++)
-    {setTimeout(function(){
+    {
+        innervalid[i]=setTimeout(function(){
         if(currTime==0){
             x.innerHTML=currTime;
 alert("Blastoff");
@@ -22,8 +25,24 @@ alert("Blastoff");
     
     
 }
-function startbuttonclick(){}
-function stopbuttonclick(){}
+function startbuttonclick(){
+    document.getElementById("Btnstart").disabled=true;
+    document.getElementById("Btnstop").disabled=false;
+    x=document.getElementById("displaycoundown");
+runtimer (x);
+
+}
+function stopbuttonclick(){
+    document.getElementById("Btnstart").disabled=false;
+    document.getElementById("Btnstop").disabled=true;
+
+
+    for(i=0;i<11;i++){
+        clearTimeout(innervalid[i]);
+
+    }
+
+}
 
 function getuserinput(){
     firstname =" "
