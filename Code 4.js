@@ -17,8 +17,6 @@ alert("Blastoff");
     },timeout);
     timeout=timeout+5000;
 
-
-
     }
     
     
@@ -26,6 +24,38 @@ alert("Blastoff");
 }
 function startbuttonclick(){}
 function stopbuttonclick(){}
+
+function getuserinput(){
+    firstname =" "
+    lastname =" "
+    fullname =""
+
+do{ 
+    firstname= prompt("firstname:");
+    lastname = prompt("lastname:");
+
+    fullname = firstname + " " + lastname;
+
+    if ( fullname.length > 20){
+        alert("Please enter shorter names (less than 20 characters). Length entered: " + fullname.length)
+    }
+}while(fullname.length > 20);
+
+do{
+    badgenumber = prompt("Please enter your badgenumber");
+
+    if (badgenumber > 999){
+        alert("Are you sre that is your actual badgenumber?");
+    }
+
+
+
+}while (badgenumber > 999);
+
+
+
+}
+
 
 
 
